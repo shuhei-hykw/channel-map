@@ -10,12 +10,13 @@ file(GLOB HEADERS "include/*.h")
 
 ### main library
 add_library(DetectorMapping SHARED ${SOURCES})
-target_include_directories(DetectorMapping PUBLIC include yaml-cpp/include)
-target_include_directories(DetectorMapping PRIVATE yaml-cpp/include)
+target_include_directories(DetectorMapping PUBLIC include
+					   external/yaml-cpp/include)
+target_include_directories(DetectorMapping PRIVATE external/yaml-cpp/include)
 target_link_libraries(DetectorMapping PRIVATE yaml-cpp)
 
 ### yaml-cpp
-add_subdirectory(yaml-cpp)
+add_subdirectory(external/yaml-cpp)
 
 ### for test
 add_executable(test_program test.cpp)

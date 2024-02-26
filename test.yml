@@ -1,2 +1,5 @@
 detector:
   TOF:
+    1:
+      U:
+  SDC1:
