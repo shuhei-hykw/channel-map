@@ -9,14 +9,12 @@ file(GLOB HEADERS "include/*.h")
 add_library(DetectorMapping SHARED ${SOURCES})
 target_include_directories(DetectorMapping PUBLIC include)
 
+### yaml-cpp
+add_subdirectory(yaml-cpp)
+
 ### for test
 add_executable(test_program test.cpp)
-target_link_libraries(test_program PRIVATE DetectorMapping)
-
-### yaml-cpp
-# git submodule add https://github.com/jbeder/yaml-cpp.git
-# add_subdirectory(yaml-cpp)
-# target_link_libraries(test_program yaml-cpp)
+target_link_libraries(test_program PRIVATE yaml-cpp DetectorMapping)
 
 ### install
 set(CMAKE_INSTALL_PREFIX .)

@@ -11,7 +11,7 @@ The way to install is as follows.
 
 ```sh
 $ cmake -S . -B .build
-$ cmake --build .build
+$ cmake --build .build --paralell 4 # n_cpu as you like
 $ cmake --install .build
 ```
 
