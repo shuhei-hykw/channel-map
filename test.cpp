@@ -1,9 +1,9 @@
 // -*- C++ -*-
 
-#include <iostream>
+#include <DetectorMapping.h>
 
 int main()
 {
-  std::cout << "Hello world." << std::endl;
+  dmap::print();
   return 0;
 }
