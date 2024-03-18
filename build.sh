@@ -1,5 +1,7 @@
 #!/bin/sh
 
+alias cmake=cmake3
+
 cmake -S . -B .build
-cmake --build .build --parallel 4 # n_cpu as you like
+cmake --build .build
 cmake --install .build

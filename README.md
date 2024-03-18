@@ -10,8 +10,9 @@ Detector-FEE Mapping API
 The way to install is as follows.
 
 ```sh
+$ export MAKEFLAGS=-j8
 $ cmake -S . -B .build
-$ cmake --build .build --parallel 4 # n_cpu as you like
+$ cmake --build .build
 $ cmake --install .build
 ```
 
@@ -22,5 +23,5 @@ $ cmake --build .build --target clean
 ```
 or
 ```sh
-$ rm -rf .build
+$ rm -rf .build bin lib lib64
 ```
