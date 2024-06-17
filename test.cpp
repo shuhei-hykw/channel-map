@@ -4,6 +4,6 @@
 
 int main()
 {
-  dmap::print();
+  cmap::print();
   return 0;
 }

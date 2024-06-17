@@ -1,5 +1,24 @@
-detector:
-  TOF:
-    1:
-      U:
-  SDC1:
+- DetID: 0
+  GroupID: 0
+  LayerID: 0
+  UpDown: 0
+  Segment: 0
+  FeNodeID: 0
+  FeBoardID: 0
+  FeChannel: 0
+- DetID: 0
+  GroupID: 0
+  LayerID: 0
+  UpDown: 0
+  Segment: 1
+  FeNodeID: 0
+  FeBoardID: 0
+  FeChannel: 1
+- DetID: 1
+  GroupID: B
+  LayerID: 0
+  UpDown: 0
+  Segment: 3
+  FeNodeID: 1
+  FeBoardID: 0
+  FeChannel: 3
